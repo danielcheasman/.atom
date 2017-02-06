@@ -12,8 +12,6 @@
       "language-ruby-on-rails"
       "language-ruby"
       "git-diff-details"
-      "git-commit"
-      "git-control"
       "deprecation-cop"
     ]
     packagesWithKeymapsDisabled: [

@@ -2,6 +2,14 @@
   "atom-clock":
     dateFormat: " h:mm a"
     showClockIcon: true
+  "atom-itunes":
+    showEqualizer: false
+    showNotes: true
+  "color-picker":
+    randomColor: false
+  "color-tabs":
+    backgroundStyle: "solid"
+    markerStyle: "corner"
   core:
     disabledPackages: [
       "language-csharp"
@@ -26,7 +34,7 @@
       "one-dark-vivid-syntax"
     ]
   editor:
-    fontSize: 15
+    fontSize: 13
     lineHeight: 1.6
     showIndentGuide: true
     tabLength: 4
@@ -36,6 +44,27 @@
   "git-plus":
     general:
       analytics: false
+      enableStatusBarIcon: false
+      messageTimeout: 8
+  jenkins:
+    interval: 6000
+    url: "https://ci.plogic.net/"
+  "move-status-items":
+    left: [
+      "DIV.cursor-position.hide[is=\"status-bar-cursor\"]"
+      "DIV.file-info[is=\"status-bar-file\"]"
+      "DIV.selection-count[is=\"status-bar-selection\"]"
+    ]
+    right: [
+      "DIV.itunes[is=\"space-pen-div\"]"
+      "DIV"
+      "A.line-ending-tile"
+      "ENCODING-SELECTOR-STATUS.encoding-status"
+      "GRAMMAR-SELECTOR-STATUS.grammar-status"
+      "DIV.git-view[is=\"status-bar-git\"]"
+    ]
+  "seti-icons": {}
+  "status-bar": {}
   welcome:
     showOnStartup: false
 ".erb.html.text":

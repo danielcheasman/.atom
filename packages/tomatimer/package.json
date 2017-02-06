@@ -1,0 +1,90 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "/private/var/folders/02/fkw1yj8s48bghxkhxx0fchn40000gn/T/d-11714-5404-1qu24n7/package.tgz",
+        "scope": null,
+        "escapedName": null,
+        "name": null,
+        "rawSpec": "/private/var/folders/02/fkw1yj8s48bghxkhxx0fchn40000gn/T/d-11714-5404-1qu24n7/package.tgz",
+        "spec": "/private/var/folders/02/fkw1yj8s48bghxkhxx0fchn40000gn/T/d-11714-5404-1qu24n7/package.tgz",
+        "type": "local"
+      },
+      "/private/var/folders/02/fkw1yj8s48bghxkhxx0fchn40000gn/T/apm-install-dir-11714-5404-1mxpd60"
+    ]
+  ],
+  "_from": "../d-11714-5404-1qu24n7/package.tgz",
+  "_id": "tomatimer@1.2.3",
+  "_inCache": true,
+  "_installable": true,
+  "_location": "/tomatimer",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "/private/var/folders/02/fkw1yj8s48bghxkhxx0fchn40000gn/T/d-11714-5404-1qu24n7/package.tgz",
+    "scope": null,
+    "escapedName": null,
+    "name": null,
+    "rawSpec": "/private/var/folders/02/fkw1yj8s48bghxkhxx0fchn40000gn/T/d-11714-5404-1qu24n7/package.tgz",
+    "spec": "/private/var/folders/02/fkw1yj8s48bghxkhxx0fchn40000gn/T/d-11714-5404-1qu24n7/package.tgz",
+    "type": "local"
+  },
+  "_requiredBy": [
+    "#USER"
+  ],
+  "_resolved": "file:../d-11714-5404-1qu24n7/package.tgz",
+  "_shasum": "5a8c2aeb4a44caa378a8477bbb5734d433db87bb",
+  "_shrinkwrap": null,
+  "_spec": "/private/var/folders/02/fkw1yj8s48bghxkhxx0fchn40000gn/T/d-11714-5404-1qu24n7/package.tgz",
+  "_where": "/private/var/folders/02/fkw1yj8s48bghxkhxx0fchn40000gn/T/apm-install-dir-11714-5404-1mxpd60",
+  "activationCommands": {
+    "atom-workspace": "tomatimer:start"
+  },
+  "bugs": {
+    "url": "https://github.com/Yu1989/atom-tomatimer/issues"
+  },
+  "consumedServices": {
+    "status-bar": {
+      "versions": {
+        "^1.0.0": "consumeStatusBar"
+      }
+    }
+  },
+  "dependencies": {
+    "lodash": "^4.12.0"
+  },
+  "description": "A loose and straightforward pomodoro timer.",
+  "devDependencies": {},
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "homepage": "https://github.com/Yu1989/atom-tomatimer#readme",
+  "keywords": [
+    "pomodoro",
+    "tomato timer",
+    "tomato",
+    "timer"
+  ],
+  "license": "MIT",
+  "main": "./lib/tomatimer",
+  "name": "tomatimer",
+  "optionalDependencies": {},
+  "readme": "# Tomatimer\n[![apm version](https://img.shields.io/apm/v/tomatimer.svg?style=flat-square)](https://atom.io/packages/tomatimer)\n[![build status](https://img.shields.io/travis/Yu1989/atom-tomatimer/master.svg?style=flat-square)](https://travis-ci.org/Yu1989/atom-tomatimer)\n[![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg?style=flat-square)](http://standardjs.com/)\n\nA loose and straightforward [pomodoro timer](https://en.wikipedia.org/wiki/Pomodoro_Technique) (also known as tomato timer) for [Atom](https://atom.io).\n\n\n## Install\n```\n$ apm install tomatimer\n```\n\n## Usage\n- Commands in *Command Palette*:\n  - `Tomatimer: Start` Start Tomatimer.\n  - `Tomatimer: Stop` Stop Tomatimer.\n  - `Tomatimer: Reset` Restart current session.\n  - `Tomatimer: Pause Or Resume` Pause or resume current session.\n    - Typing in Atom automatically resumes the timer.\n- Once started, look for a timer on status bar, that consists of an hourglass icon and a time.\n  - Click icon to view your Tomatimer historical stats.\n  - Click time to pause/resume current session.\n  - Timer counts 25 minutes (configurable) before a dialog freezes Atom and reminds you to take a break.\n- Whenever you feel ready (a 5-minute break is recommended), click *Back to work* to start a new session.\n\n## Keyboard Shortcuts\n- <kbd>ctrl-alt-t</kbd> `Tomatimer: Start`\n- <kbd>ctrl-alt-s</kbd> `Tomatimer: Stop`\n- <kbd>ctrl-alt-r</kbd> `Tomatimer: Reset`\n- <kbd>ctrl-alt-p</kbd> `Tomatimer: Pause Or Resume`\n\n## Screenshots\nTimer on status bar\n\n![Timer](https://github.com/Yu1989/atom-tomatimer/blob/master/screenshots/timer.png?raw=true)\n\n*Take a break* dialog\n\n![Dialog](https://github.com/Yu1989/atom-tomatimer/blob/master/screenshots/dialog.png?raw=true)\n\nUsage stats\n\n![Stats](https://github.com/Yu1989/atom-tomatimer/blob/master/screenshots/stats.png?raw=true)\n\n## Todo\n- More specs\n",
+  "readmeFilename": "README.md",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Yu1989/atom-tomatimer.git"
+  },
+  "standard": {
+    "globals": [
+      "atom",
+      "Audio",
+      "describe",
+      "beforeEach",
+      "afterEach",
+      "it",
+      "expect",
+      "window"
+    ]
+  },
+  "version": "1.2.3"
+}

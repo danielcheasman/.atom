@@ -1,0 +1,46 @@
+"*":
+  core:
+    disabledPackages: [
+      "language-csharp"
+      "language-go"
+      "language-java"
+      "language-less"
+      "language-objective-c"
+      "language-perl"
+      "language-python"
+      "language-toml"
+      "language-ruby-on-rails"
+      "language-ruby"
+      "git-diff-details"
+      "git-commit"
+      "git-control"
+      "deprecation-cop"
+    ]
+    packagesWithKeymapsDisabled: [
+      "process-palette"
+    ]
+    telemetryConsent: "no"
+    themes: [
+      "one-dark-ui"
+      "one-dark-vivid-syntax"
+    ]
+  editor:
+    fontSize: 15
+    lineHeight: 1.6
+    showIndentGuide: true
+    tabLength: 4
+    tabType: "soft"
+  "exception-reporting":
+    userId: "d9dc7b48-43b9-172e-dbb7-1fc8436b80e4"
+  "git-plus":
+    general:
+      analytics: false
+  welcome:
+    showOnStartup: false
+".erb.html.text":
+  editor:
+    showIndentGuide: false
+".html.php.text":
+  editor:
+    showIndentGuide: true
+    tabLength: 4

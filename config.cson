@@ -1,4 +1,7 @@
 "*":
+  "atom-clock":
+    dateFormat: " h:mm a"
+    showClockIcon: true
   core:
     disabledPackages: [
       "language-csharp"

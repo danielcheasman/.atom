@@ -18,8 +18,112 @@
 # This file uses CoffeeScript Object Notation (CSON).
 # If you are unfamiliar with CSON, you can read more about it in the
 # Atom Flight Manual:
-# http://flight-manual.atom.io/using-atom/sections/basic-customization/#_cson
+# https://atom.io/docs/latest/using-atom-basic-customization#cson
+
 '.php':
-  'dd':
-    'prefix': 'dd'
-    'body': 'dd($1);'
+    'Laravel 5 Model':
+        'prefix': 'lamod'
+        'leftLabelHTML': '<span style="background-color: #e74430; color:white; font-family: "Miriam Libre","Source Sans Pro",sans-serif; display:inline-block;"><span style="margin: 3px;">Laravel 5</span></span>'
+        'body': """
+<?php
+
+namespace App\\\\Models;
+
+use Illuminate\\\\Database\\\\Eloquent\\\\Model;
+
+class $1 extends Model
+{
+    $2
+}
+"""
+    'Laravel 5 Controller':
+        'prefix': 'lacon'
+        'leftLabelHTML': '<span style="background-color: #e74430; color:white; font-family: "Miriam Libre","Source Sans Pro",sans-serif; display:inline-block;"><span style="margin: 3px;">Laravel 5</span></span>'
+        'body': """
+<?php
+
+namespace App\\\\Http\\\\Controllers$1;
+
+use Illuminate\\\\Http\\\\Request;
+
+class $2 extends Controller
+{
+    $3
+}
+
+"""
+    'Laravel 5 Test':
+        'prefix': 'latest'
+        'leftLabelHTML': '<span style="background-color: #e74430; color:white; font-family: "Miriam Libre","Source Sans Pro",sans-serif; display:inline-block;"><span style="margin: 3px;">Laravel 5</span></span>'
+        'body':"""
+<?php
+
+use Illuminate\Foundation\Testing\WithoutMiddleware;
+use Illuminate\Foundation\Testing\DatabaseMigrations;
+use Illuminate\Foundation\Testing\DatabaseTransactions;
+
+class $1Test extends TestCase
+{
+    $2
+}
+
+"""
+    'Laravel 5 Schema Create':
+        'prefix': 'lsc'
+        'leftLabelHTML': '<span style="background-color: #e74430; color:white; font-family: "Miriam Libre","Source Sans Pro",sans-serif; display:inline-block;"><span style="margin: 3px;">Laravel 5</span></span>'
+        'body': """
+Schema::create('$1', function(Blueprint $table) {
+    $table->increments('id');
+    $2
+});
+
+"""
+
+
+    'Laravel 5 Schema Drop':
+        'prefix': 'lsd'
+        'leftLabelHTML': '<span style="background-color: #e74430; color:white; font-family: "Miriam Libre","Source Sans Pro",sans-serif; display:inline-block;"><span style="margin: 3px;">Laravel 5</span></span>'
+        'body': """
+Schema::drop('$1');
+"""
+
+    'public static function':
+        'prefix': 'psf'
+        'leftLabelHTML': '<span style="background-color: #4f5b93; color:white; font-family: "Miriam Libre","Source Sans Pro",sans-serif; display:inline-block;"><span style="margin: 3px;">PHP</span></span>'
+        'body': """
+public static function $1($2)
+{
+    $3
+}
+
+"""
+    'private static function':
+        'prefix': 'prsf'
+        'leftLabelHTML': '<span style="background-color: #4f5b93; color:white; font-family: "Miriam Libre","Source Sans Pro",sans-serif; display:inline-block;"><span style="margin: 3px;">PHP</span></span>'
+        'body': """
+private static function $1($2)
+{
+    $3
+}
+
+"""
+    'public function':
+        'prefix': 'pfun'
+        'leftLabelHTML': '<span style="background-color: #4f5b93; color:white; font-family: "Miriam Libre","Source Sans Pro",sans-serif; display:inline-block;"><span style="margin: 3px;">PHP</span></span>'
+        'body': """
+public function $1($2)
+{
+    $3
+}
+
+"""
+    'private function':
+        'prefix': 'prfun'
+        'leftLabelHTML': '<span style="background-color: #4f5b93; color:white; font-family: "Miriam Libre","Source Sans Pro",sans-serif; display:inline-block;"><span style="margin: 3px;">PHP</span></span>'
+        'body': """
+private function $1($2)
+{
+    $3
+}
+
+"""

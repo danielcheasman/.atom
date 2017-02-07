@@ -63,6 +63,10 @@
       "GRAMMAR-SELECTOR-STATUS.grammar-status"
       "DIV.git-view[is=\"status-bar-git\"]"
     ]
+  "php-debug":
+    AutoExpandLocals: true
+    currentPanelHeight: "285px"
+    currentPanelMode: "bottom"
   "seti-icons": {}
   "status-bar": {}
   welcome:
